@@ -6,26 +6,24 @@ $passw=$_POST['password'];
 
 $user=$_POST['username'];
 
-	$sql=mysql_query("select * from user where nama='$user' and pass='$pass'");
-	$count=mysql_num_rows($sql);
-	$rs=mysql_fetch_array($sql);
+	$sql=mysqli_query("select * from user where nama='$user' and pass='$pass'");
+	$count=mysqli_num_rows($sql);
+	$rs=mysqli_fetch_array($sql);
 		if($count>0){
 			session_start();
-				$_SESSION['idu']=$rs['idu'];
-
+				$_SESSION['idguru']=$rs['idguru'];
 				$_SESSION['nama']=$rs['nama'];
 				$_SESSION['level']=$rs['level'];
 				$_SESSION['idk']="";
-				$_SESSION['ortu']="";
 				$_SESSION['id']=$rs['id'];
 				
 			
 			header('location:media.php?module=home');
 		}else{
 $mr=md5($_POST['password']);
-	$sqla=mysql_query("select * from siswa where nis='$user' and pass='$mr'");
-	$counta=mysql_num_rows($sqla);
-	$rsa=mysql_fetch_array($sqla);
+	$sqla=mysqli_query("select * from guru where idguru='$user' and pass='$mr'");
+	$counta=mysqli_num_rows($sqla);
+	$rsa=mysqli_fetch_array($sqla);
 if($counta>0){
 			session_start();
 				$_SESSION['idu']=$rsa['nis'];
@@ -39,9 +37,9 @@ if($counta>0){
 				
 }else{
 $gr=md5($_POST['password']);
-	$sqlz=mysql_query("select * from guru where nip='$user' and pass='$gr'");
-	$countz=mysql_num_rows($sqlz);
-	$rsz=mysql_fetch_array($sqlz);
+	$sqlz=mysqli_query("select * from guru where nip='$user' and pass='$gr'");
+	$countz=mysqli_num_rows($sqlz);
+	$rsz=mysqli_fetch_array($sqlz);
 if($countz>0){
 			session_start();
 				$_SESSION['idu']=$rsz['nip'];
