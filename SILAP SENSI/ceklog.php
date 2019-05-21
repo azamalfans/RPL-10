@@ -46,7 +46,6 @@ if($countz>0){
 				$_SESSION['nama']=$rsz['nama'];
 				$_SESSION['idk']=$rsz['idk'];
 				$_SESSION['level']="guru";
-				$_SESSION['ortu']="";
 				$_SESSION['id']="";
 
 			header('location:media.php?module=home');
