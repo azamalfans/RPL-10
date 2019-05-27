@@ -14,7 +14,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Sistem Informasi Absensi - SD NEGERI 47</title>
+    <title>Sistem Informasi Absensi - SMA Negeri 99</title>
     <!-- MY STYLES-->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/custom.css" rel="stylesheet">
@@ -23,7 +23,7 @@
 <body>
 <!-- Awal Header -->
 <?php 
-    include './identitas/headeradmin.php'
+    include './include/headeradmin.php'
 ?>
 <!-- Akhir Header -->
 
@@ -137,3 +137,6 @@
 
 </body>
 </html>
+<?php
+	'.include/footer.php'
+?>
