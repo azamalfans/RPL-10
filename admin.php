@@ -10,7 +10,7 @@
 <div id="body" class="width">
     <section id="content">
       <article>
-        <h3>Aplikasi Sistem Informasi Absensi SDN Negeri 74</h3>
+        <h3>Aplikasi Sistem Informasi Absensi SMA Negeri 99</h3>
         <br>
         <img style="width: 50%;
                     margin-left: 130px;
@@ -48,7 +48,7 @@
 
 <!-- Awal Sidebar / Info --> 
         <?php 
-            include './identitas/sidebarinfo.php'
+            include './include/sidebarinfo.php'
         ?>
 <!-- Akhir Sidebar / Info -->
 
