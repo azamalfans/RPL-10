@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>SISTEM INFORMASI ABSENSI SD74</title>
+<title>SISTEM INFORMASI ABSENSI SMAN 99</title>
 <link rel="stylesheet" href="assets/css/custom.css" type="text/css" />
 <link rel="stylesheet" href="assets/css/font-awesome.css" type="text/css"/>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bf97a7dfb59394a"></script>
@@ -11,13 +11,13 @@
 <body>
   <!-- Awal Header -->
     <?php 
-      include './identitas/header.php'
+      include './include/header.php'
     ?>
   <!-- Akhir Header -->
   
   <!-- Awal Menu Navigasi -->
     <?php 
-      include './identitas/menu.php'
+      include './include/menu.php'
     ?>
   <!-- Akhir Menu Navigasi -->
   
@@ -29,13 +29,13 @@
         
   <!-- Awal Sidebar -->
       <?php 
-        include './identitas/sidebar.php'
+        include './include/sidebar.php'
       ?>
   <!-- Akhir Sidebar -->
 
   <!-- Awal Footer -->
     <?php 
-      include './identitas/footer.php'
+      include './include/footer.php'
     ?>
   <!-- Akhir Footer -->  
 </div>
