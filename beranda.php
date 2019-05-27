@@ -38,6 +38,5 @@
       include './include/footer.php'
     ?>
   <!-- Akhir Footer -->  
-</div>
 </body>
 </html>
