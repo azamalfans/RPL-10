@@ -68,6 +68,7 @@ if($cek > 0){
     // buat session login dan username untuk admin
     $_SESSION['username'] = $username;
     $_SESSION['level'] = "admin";
+    $_SESSION['nama'] = mysqli_query($koneksi,"select nama from user while username='$username'");
     // alihkan ke halaman dashboard admin
     header("location:index.php?page=admin");
  

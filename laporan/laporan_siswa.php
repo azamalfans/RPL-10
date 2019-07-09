@@ -64,7 +64,7 @@ $content = '
                     <td>'.$data['nisn'].'</td>
                     <td>'.$data['nama'].'</td>
                     <td>'.$data['kelas'].'</td>
-                    <td>'.$data['tanggal'].'</td>
+                    <td>'.$data['nomorhp'].'</td>
                     <td>'.$data['jenis_kelamin'].'</td>
                     <td>'.$data['keterangan'].'</td>
                 </tr>
